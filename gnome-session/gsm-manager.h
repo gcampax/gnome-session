@@ -69,6 +69,8 @@ typedef struct
 typedef enum {
         /* gsm's own startup/initialization phase */
         GSM_MANAGER_PHASE_STARTUP = 0,
+        /* wayland compositor and XWayland */
+        GSM_MANAGER_PHASE_DISPLAY_SERVER,
         /* xrandr setup, gnome-settings-daemon, etc */
         GSM_MANAGER_PHASE_INITIALIZATION,
         /* window/compositing managers */
